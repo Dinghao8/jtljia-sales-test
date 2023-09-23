@@ -1,0 +1,26 @@
+-
+  value:
+    USERNAME:  #登录的用户名
+      name: id
+      value: user_name
+    PWD:       #登录密码
+      name: id
+      value: password
+    BUTTON:    #登录按钮
+      name: xpath
+      value: //span[text()="登录"]
+    SOMS_BUTT: #门店按钮
+      name: xpath
+      value: //div[@class='left']
+    NEXT_STEP: #下一步按钮
+      name: xpath
+      value: //span[text()='下一步']
+    SELECTED_SOMS: #选择门店
+      name: xpath
+    ENTER: #进入按钮
+      name: xpath
+      value: //span[text()='进入']
+    assert: 门店管理系统
+  account: N0065636
+  password: Dh19970322
+  store: //li[text()='金螳螂家上海徐汇公司（特许经营）']

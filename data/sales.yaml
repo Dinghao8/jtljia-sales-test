@@ -1,0 +1,114 @@
+-
+  crm:
+    name: xpath     #crm系统
+    value: //div[text()='CRM系统']
+  sales_management:           #左侧线索管理菜单
+    name: xpath
+    value: //span[text()='线索管理']
+  create_sales:               # 创建线索按钮
+    name: xpath
+    value: //span[text()='创建线索']
+  phone_number:     #手机号码输入框
+    name: xpath
+    value: //input
+    text: 17826185420
+  click_create_butt:      #创建线索按钮
+    name: xpath
+    value: //button/span[text()='创建线索']
+  customer:             #客户姓名输入框
+    name:  css selector
+    value: '[class="el-input__inner"]'
+    index: 1
+    text:  丁浩
+  gender:         #性别radio默认为男
+    name: xpath
+    value: //span[text()='女士']
+  first_source:     #一级渠道
+    name: css selector
+    value: '[placeholder="请选择一级来源渠道"]'
+  first_source_value:       #选择门店线下自拓
+    js: document.getElementsByClassName("el-scrollbar__view el-select-dropdown__list")[12].children[0].click()
+  second_source:        #二级渠道
+    name: css selector
+    value: '[placeholder="请选择二级来源渠道"]'
+  second_source_value:    #选择地推
+    name: xpath
+    value: //span[text()='地推']
+  third_source:       #三级渠道
+    name: css selector
+    value: '[placeholder="请选择三级来源渠道"]'
+  third_source_value:     #选择公共场所地推
+    name: xpath
+    value: //span[text()='公共场所地推']
+  intention:      #意向等级弹窗
+    name: css selector
+    value: '[placeholder="请选择意向等级"]'
+  intention_v:    #选择意向,child(1)为准意向,2为高意向,3为中意向,4为低意向
+    name: css selector
+    value: '[x-placement="top-start"][class="el-select-dropdown el-popper"] li:nth-child(2)'
+  customer_manager: #客户经理下拉框
+    name: xpath
+    value: //input[@placeholder="请选择客户经理"]
+  customer_manager_v:     #选择第一个客户经理
+    js: document.getElementsByClassName('el-scrollbar__view el-select-dropdown__list')[11].children[0].click()
+  commuinty:
+    name: xpath
+    value: //input[@placeholder="请输入小区名称检索"]
+  community_v:    #选择第一个小区
+    js: document.getElementsByClassName('el-scrollbar__view el-select-dropdown__list')[11].children[0].click()
+  house_number:   #门牌号输入框
+    name: css selector
+    value: '[placeholder="请输入门牌号"]'
+    text: 24栋7788号
+  provinces:      #省市区下拉框
+    name: css selector
+    value: '[class="el-cascader el-cascader--medium"]'
+  provinces_v:    #选择江苏省
+    js: document.getElementsByClassName('el-cascader-node__label')[9].click()
+  city_v:         #选择苏州市
+    js: document.getElementsByClassName('el-scrollbar__view el-cascader-menu__list')[1].children[4].click()
+  area_v:         #选择区,children[1]为园区,0是姑苏区,2是虎丘区,3是吴中区,4是相城区
+    js: document.getElementsByClassName('el-scrollbar__view el-cascader-menu__list')[2].children[1].click()
+  customer_type:  #是否区县客资,index为2否,3为是
+    name: css selector
+    value: '[class="el-radio__inner"]'
+    index: 2
+  community_type:      #房屋类别下拉框
+    js: document.getElementsByClassName('el-input el-input--medium el-input--suffix')[11].click()
+  community_type_v:   #房屋类别,children[1]为大平层(>150平米),0为小平层(<150平米),2为联排别墅,3为独栋别墅,4为小额公装
+    js: document.getElementsByClassName('el-scrollbar__view el-select-dropdown__list')[11].children[1].click()
+  qifang:           #是否期房,4为否,5为是
+    name: css selector
+    value: '[class="el-radio__inner"]'
+    index: 4
+  community_structure:   #房屋结构下拉框
+    js: document.getElementsByClassName('el-input el-input--medium el-input--suffix')[12].click()
+  community_structure_v: #房屋结构,children[1]为砖混结构,0为砖木结构,2为钢筋混凝土结构,3为钢结构砖混楼板
+    js: document.getElementsByClassName('el-scrollbar__view el-select-dropdown__list')[11].children[2].click()
+  decoration_nature:      #装修性质下拉框
+    js: document.getElementsByClassName('el-input el-input--medium el-input--suffix')[13].click()
+  decoration_nature_v:   #装修性质,children[0]为毛坯房,1为二次装修(10年内),2为二次装修(10年以上)
+    js: document.getElementsByClassName('el-scrollbar__view el-select-dropdown__list')[11].children[0].click()
+  area:                #面积
+    name: xpath
+    value: //input[@placeholder="请输入面积"]
+    text: 120
+  room:            #室
+    js: document.getElementsByClassName('mgRight_10 el-input el-input--medium')[0].innerHTML=2
+  hall:            #厅
+    js: document.getElementsByClassName('mgRight_10 el-input el-input--medium')[1].innerHTML=1
+  kitchen:         #厨房
+    js: document.getElementsByClassName('mgRight_10 el-input el-input--medium')[2].innerHTML=1
+  toilet:          #卫生间
+    js: document.getElementsByClassName('mgRight_10 el-input el-input--medium')[3].innerHTML=1
+  balcony:         #阳台
+    js: document.getElementsByClassName('el-input--medium')[20].innerHTML=2
+  cancel_or_confirm:    #10为取消按钮,11为确定按钮
+    name: css selector
+    value: '[type="button"]'
+    index: 10
+
+
+
+
+
